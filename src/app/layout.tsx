@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import RecoilProvider from "@/components/RecoilProvider";
 import ClientNavbarWrapper from "@/components/ClientNavbarWrapper ";
 import ClientContactFormWrapper from "@/components/ClientContactFormWrapper";
+import Navbar from "@/components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -53,7 +54,8 @@ export default function RootLayout({
       >
         <RecoilProvider>
             {/* <GoogleAnalytics /> */}
-            {/* <ClientNavbarWrapper /> */}
+            <ClientNavbarWrapper />
+            <Navbar />
             {/* <ClientContactFormWrapper /> */}
             <main>{children}</main>
             <Footer />
